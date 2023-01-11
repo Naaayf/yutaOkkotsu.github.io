@@ -64,6 +64,16 @@ body {
   background-color: #ffffff;
 }
 
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }

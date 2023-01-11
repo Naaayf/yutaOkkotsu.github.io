@@ -70,11 +70,13 @@
 
 
     // Skills
-    $('.skill').waypoint(function () {
-        $('.progress .progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
-        });
-    }, {offset: '80%'});
+    $(document).ready(function() {
+        $('.progress .progress-bar').css("width",
+                  function() {
+                      return $(this).attr("aria-valuenow") + "%";
+                  }
+          )
+      });
 
 
     // Portfolio isotope and filter
